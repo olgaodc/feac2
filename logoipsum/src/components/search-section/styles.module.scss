@@ -48,21 +48,12 @@
       }
     }
 
-    .button {
-      background-color: #8056eb;
-      color: #fff;
-      border: none;
+    .searchButton {
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 19px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #5b24e7;
-      }
 
       img {
         height: 22px;

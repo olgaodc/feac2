@@ -6,6 +6,7 @@ import uniqid from 'uniqid';
 import styles from './styles.module.scss';
 
 import SearchIcon from '../../assets/search-icon.png';
+import PrimaryButton from '../primary-button/primary-button';
 
 
 const SearchSection = () => {
@@ -32,9 +33,14 @@ const SearchSection = () => {
               value={inputText}
               onChange={handleClick}
             />
-            <button className={styles.button}>
+            {/* <button className={styles.button}>
               <img src={SearchIcon} alt="search icon" />
-            </button>
+            </button> */}
+            <PrimaryButton
+              className={styles.searchButton}
+            >
+              <img src={SearchIcon} alt="search icon" />
+              </PrimaryButton>
           </div>
           <section className={styles.servicesSection}>
             {services.length > 0 ? services.map(service => 

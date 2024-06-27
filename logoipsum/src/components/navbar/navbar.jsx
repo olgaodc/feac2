@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import Container from '../container/container';
 import LogoImage from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
+import PrimaryButton from '../primary-button/primary-button';
 
 const Navbar = () => {
   return (
@@ -17,7 +18,10 @@ const Navbar = () => {
             <Link to='/' className={styles.listItem}>Services</Link>
             <Link to='/' className={styles.listItem}>About Us</Link>            
           </div>
-          <button className={styles.button}>Login / Sign Up</button>
+          <PrimaryButton 
+            buttonName='Login / Sign Up'
+            onClick={() => console.log('clicked')}
+          />
         </nav>
       </Container>
     </div>
