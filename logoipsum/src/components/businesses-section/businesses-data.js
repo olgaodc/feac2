@@ -9,8 +9,8 @@ const businessesData = [
   {
     imageUrl: 'https://www.pristinehome.com.au/wp-content/uploads/2020/01/15-Cleaning-Tips-from-Professional-Cleaners-3.jpg',
     category: 'Cleaning',
-    serviceName: 'Išsivalyk pats',
-    personName: 'Tadas Gedvilas',
+    serviceName: 'Valymo specialistė',
+    personName: 'Teodora Gedvilė',
     address: 'Kauno g. 27, Vilnius',
   },
   {
@@ -24,8 +24,22 @@ const businessesData = [
     imageUrl: 'https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/know-how/hero/kh-qualified-vs-unqualified-electrical-workers_feat.jpg',
     category: 'Electic',
     serviceName: 'Elektrikas į namus',
-    personName: 'Rokas Andreikėnas',
+    personName: 'Rokas Margėnas',
     address: 'Maisto g. 17, Vilnius',
+  },
+  {
+    imageUrl: 'https://www.hourmaid.com/wp-content/uploads/2017/12/cleaning-services-1024x682.jpeg',
+    category: 'Cleaning',
+    serviceName: 'UAB Švara',
+    personName: 'Albina Lukošytė',
+    address: 'Gardino g. 2, Šiauliai',
+  },
+  {
+    imageUrl: 'https://www.bergerpaints.com/blog/wp-content/uploads/2020/06/Banner-Image.png',
+    category: 'Painting',
+    serviceName: 'Dažau pats',
+    personName: 'Andrius Kubinas',
+    address: 'Tilžės g. 12, Telšiai',
   },
 ]
 

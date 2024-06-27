@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import Container from '../container/container';
 import BusinessCard from '../business-card/business-card';
-import uniqid from 'uniqid';
+import { v4 as uuidv4 } from 'uuid';
 import businessesData from './businesses-data';
 
 const BusinessesSection = () => {
@@ -14,7 +14,7 @@ const BusinessesSection = () => {
         <div className={styles.section}>
           {businesses && businesses.map(business =>
             <BusinessCard
-              key={uniqid()}
+              key={uuidv4()}
               src={business.imageUrl}
               alt={business.serviceName}
               serviceCategory={business.category}

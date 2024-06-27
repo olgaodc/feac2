@@ -7,40 +7,28 @@ import ElectricIcon from '../../assets/electric-icon.png';
 
 const servicesData = [
   {
-    name: 'truck icon',
-    text: 'Shifting',
-    url: `${TruckIcon}`,
-    link: '/',
+    serviceName: 'shifting',
+    imageUrl: `${TruckIcon}`, 
   },
   {
-    name: 'repair icon',
-    text: 'Repair',
-    url: `${RepairIcon}`,
-    link: '/',
+    serviceName: 'repair',
+    imageUrl: `${RepairIcon}`,
   }, 
   {
-    name: 'plumbing icon',
-    text: 'Plumbing',
-    url: `${PlumbingIcon}`,
-    link: '/',
+    serviceName: 'plumbing',
+    imageUrl: `${PlumbingIcon}`,
   }, 
   {
-    name: 'cleaning icon',
-    text: 'Cleaning',
-    url: `${CleaningIcon}`,
-    link: '/',
+    serviceName: 'cleaning',
+    imageUrl: `${CleaningIcon}`,
   }, 
   {
-    name: 'painting icon',
-    text: 'Painting',
-    url: `${PaintingIcon}`,
-    link: '/',
+    serviceName: 'painting',
+    imageUrl: `${PaintingIcon}`,
   },
   {
-    name: 'electric icon',
-    text: 'Electric',
-    url: `${ElectricIcon}`,
-    link: '/',
+    serviceName: 'electric',
+    imageUrl: `${ElectricIcon}`,
   },
 
 ]

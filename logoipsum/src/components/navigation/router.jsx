@@ -1,26 +1,50 @@
 import React from 'react';
-import HomePage from '../../pages/home';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import HomePage from '../../pages/home/home';
+import ServicesPage from '../../pages/services/services';
+import AboutPage from '../../pages/about/about';
+import LoginPage from '../../pages/login/login';
+
+export const routes = {
+  HOME: '/',
+  SERVICES: '/services',
+  ABOUT: '/about',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  SEARCH_CATEGORY: {
+    path: '/search/:category',
+    url: (category) => `search/${category}`
+  },
+  ERROR: '*',
+}
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: routes.HOME,
     element: <HomePage />,
   },
+  {
+    path: routes.SERVICES,
+    element: <ServicesPage />,
+  },
+  {
+    path: routes.ABOUT,
+    element: <AboutPage />,
+  },
+  {
+    path: routes.LOGIN,
+    element: <LoginPage />,
+  },
   // {
-  //   path: "/services",
-  //   element: <ServicesPage />,
+  //   path: "routes.REGISTER,
+  //   element: <RegisterPage />,
   // },
   // {
-  //   path: "/about",
-  //   element: <AboutPage />,
+  //   path: routes.SEARCH_CATEGORY.path,
+  //   element: <SearchPage />,
   // },
   // {
-  //   path: "/login",
-  //   element: <LoginPage />,
-  // },
-  // {
-  //   path: "*",
+  //   path: routes.ERROR,
   //   element: <ErrorPage />,
   // },
 ]);

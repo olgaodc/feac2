@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { Link } from 'react-router-dom';
+import { routes } from '../navigation/router';
 
-const ServiceCard = ({href, src, alt, text}) => {
+const ServiceCard = ({ src, serviceName }) => {
   return (
-    <div className={styles.cardWrapper}>
-        <Link className={styles.card} to={href}>
-          <img className={styles.image} src={src} alt={alt} />
-          <p className={styles.text}>{text}</p>
-        </Link>
-    </div>
+    <Link className={styles.card} to={`${routes.SEARCH_CATEGORY.url(serviceName)}`}>
+      <img className={styles.image} src={src} alt={`${serviceName} icon`} />
+      <p className={styles.text}>{serviceName}</p>
+    </Link>
   )
 }
 

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import Container from '../container/container';
-import CathegoryCard from '../service-card/service-card';
+import ServiceCard from '../service-card/service-card';
 import servicesData from './services-data';
-import uniqid from 'uniqid';
+import { v4 as uuidv4 } from 'uuid';
 import styles from './styles.module.scss';
 
 import SearchIcon from '../../assets/search-icon.png';
 import PrimaryButton from '../primary-button/primary-button';
+
 
 
 const SearchSection = () => {
@@ -33,23 +34,18 @@ const SearchSection = () => {
               value={inputText}
               onChange={handleClick}
             />
-            {/* <button className={styles.button}>
-              <img src={SearchIcon} alt="search icon" />
-            </button> */}
             <PrimaryButton
               className={styles.searchButton}
             >
               <img src={SearchIcon} alt="search icon" />
-              </PrimaryButton>
+            </PrimaryButton>
           </div>
           <section className={styles.servicesSection}>
             {services.length > 0 ? services.map(service => 
-              <CathegoryCard
-                key={uniqid()}
-                href={service.link}
-                src={service.url}
-                alt={service.name}
-                text={service.text}
+              <ServiceCard
+                key={uuidv4()}
+                src={service.imageUrl}
+                serviceName={service.serviceName}
               />
             ) : null}
           </section>
