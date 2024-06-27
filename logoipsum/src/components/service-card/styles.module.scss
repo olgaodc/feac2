@@ -11,11 +11,15 @@
   height: 120px;
   width: 180px;
   border-radius: 8px;
-  transition: background-color color 0.3s;
+  transition: background-color, color 0.3s;
 
   &:hover {
     background-color: #f7f4fd;
     color: #8056eb;
+  }
+
+  &.wide {
+    width: 300px;
   }
 
   .image {

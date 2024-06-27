@@ -4,6 +4,7 @@ import HomePage from '../../pages/home/home';
 import ServicesPage from '../../pages/services/services';
 import AboutPage from '../../pages/about/about';
 import LoginPage from '../../pages/login/login';
+import SearchPage from '../../pages/search/search';
 
 export const routes = {
   HOME: '/',
@@ -39,10 +40,10 @@ const router = createBrowserRouter([
   //   path: "routes.REGISTER,
   //   element: <RegisterPage />,
   // },
-  // {
-  //   path: routes.SEARCH_CATEGORY.path,
-  //   element: <SearchPage />,
-  // },
+  {
+    path: routes.SEARCH_CATEGORY.path,
+    element: <SearchPage />,
+  },
   // {
   //   path: routes.ERROR,
   //   element: <ErrorPage />,

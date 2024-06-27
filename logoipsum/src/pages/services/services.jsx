@@ -7,7 +7,7 @@ const ServicesPage = () => {
     <>
     <Navbar />
     <Container>
-      <div>ServicesPage</div>
+      <h2>Services</h2>
     </Container>
   </>
   )
