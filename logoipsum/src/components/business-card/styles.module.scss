@@ -1,0 +1,66 @@
+.card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1490196078) -0.05px 1.95px 12.6px;
+  height: 450px;
+  transition: all 0.3s;
+
+  &:hover {
+    margin-top: -10px;
+    margin-bottom: 0;
+    box-shadow: #8056eb -0.05px 1.95px 12.6px;
+  }
+
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    display: block;
+  }
+
+  .cardInfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .category {
+      color: #8056eb;
+      font-size: 14px;
+      font-weight: 500;
+      background-color: #e5ddfb;
+      padding: 8px 16px;
+      border-radius: 30px;
+    }
+
+    .serviceName {
+      margin: 0;
+    }
+
+    .personName {
+      color: #8056eb;
+      margin: 0;
+    }
+
+    .address {
+      color: #a8a8a8;
+      margin: 0;
+    }
+
+    .button {
+      background-color: #8056eb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transform: all 0.3s;
+
+      &:hover {
+        background-color: #5b24e7;
+      }
+    }
+  }
+}

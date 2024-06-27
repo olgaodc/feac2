@@ -37,7 +37,7 @@ const SearchSection = () => {
             </button>
           </div>
           <section className={styles.servicesSection}>
-            {services && services.map(service => 
+            {services.length > 0 ? services.map(service => 
               <CathegoryCard
                 key={uniqid()}
                 href={service.link}
@@ -45,7 +45,7 @@ const SearchSection = () => {
                 alt={service.name}
                 text={service.text}
               />
-            )}
+            ) : null}
           </section>
         </section>
       </Container>
