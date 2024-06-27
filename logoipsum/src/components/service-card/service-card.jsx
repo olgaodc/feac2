@@ -1,15 +1,16 @@
-import React, { Children } from 'react';
+import React from 'react';
 import styles from './styles.module.scss';
+import { Link } from 'react-router-dom';
 
-const CathegoryCard = ({href, src, alt, text}) => {
+const ServiceCard = ({href, src, alt, text}) => {
   return (
     <div className={styles.cardWrapper}>
-        <a className={styles.card} href={href}>
+        <Link className={styles.card} to={href}>
           <img className={styles.image} src={src} alt={alt} />
           <p className={styles.text}>{text}</p>
-        </a>
+        </Link>
     </div>
   )
 }
 
-export default CathegoryCard
+export default ServiceCard
