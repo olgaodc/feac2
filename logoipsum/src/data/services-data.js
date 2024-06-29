@@ -13,11 +13,7 @@ const servicesData = [
   {
     serviceName: 'repair',
     imageUrl: `${RepairIcon}`,
-  }, 
-  {
-    serviceName: 'plumbing',
-    imageUrl: `${PlumbingIcon}`,
-  }, 
+  },  
   {
     serviceName: 'cleaning',
     imageUrl: `${CleaningIcon}`,
@@ -25,6 +21,10 @@ const servicesData = [
   {
     serviceName: 'painting',
     imageUrl: `${PaintingIcon}`,
+  },
+  {
+    serviceName: 'plumbing',
+    imageUrl: `${PlumbingIcon}`,
   },
   {
     serviceName: 'electric',
