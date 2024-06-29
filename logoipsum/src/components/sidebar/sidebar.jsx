@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { v4 as uuidv4 } from 'uuid';
-import servicesData from '../search-section/services-data';
+import servicesData from '../../data/services-data';
 import ServiceCard from '../service-card/service-card';
 
 const Sidebar = () => {
