@@ -14,7 +14,7 @@ export const routes = {
   REGISTER: '/register',
   SEARCH_CATEGORY: {
     path: '/search/:category',
-    url: (category) => `search/${category}`
+    url: (category) => `/search/${category}`
   },
   ERROR: '*',
 }

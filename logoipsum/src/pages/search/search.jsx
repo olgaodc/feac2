@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.module.scss';
 import Navbar from '../../components/navbar/navbar';
 import Container from '../../components/container/container';
 import Sidebar from '../../components/sidebar/sidebar';
@@ -11,7 +12,7 @@ const SearchPage = () => {
     <>
       <Navbar />
       <Container>
-        <div>
+        <div className={styles.content}>
           <Sidebar />
         </div>
       </Container>

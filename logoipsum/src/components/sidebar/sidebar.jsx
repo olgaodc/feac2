@@ -7,7 +7,7 @@ import ServiceCard from '../service-card/service-card';
 const Sidebar = () => {
   return (
     <aside className={styles.sidebarWrapper}>
-      <h2>Categories</h2>
+      <h2 className={styles.title}>Categories</h2>
       <div className={styles.sidebar}>
         {servicesData.length > 0 ? servicesData.map(service =>
           <ServiceCard
