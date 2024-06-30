@@ -23,6 +23,7 @@ const BusinessesSection = ({ shouldFilter }) => {
       {businesses.length > 0 ? businesses.map(business =>
         <BusinessCard
           key={uuidv4()}
+          id={business.id}
           src={business.imageUrl}
           alt={business.serviceName}
           serviceCategory={business.category}
